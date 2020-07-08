@@ -14,11 +14,11 @@ public class Divisible {
         arrayList.add(22);
     }
 
-    public void removeFromArray() {
+    public void removeFromArray(int x) {
 
         fillArray();
 
-        arrayList.removeIf(i -> i % 3 == 0);
+        arrayList.removeIf(i -> i % x == 0);
         System.out.println("Values that didn't divisible by 3: " + arrayList);
     }
 }
